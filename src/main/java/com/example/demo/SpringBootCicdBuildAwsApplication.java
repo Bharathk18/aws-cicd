@@ -14,6 +14,13 @@ public class SpringBootCicdBuildAwsApplication {
 		return "CI CD build success in Aws";
 	}
 	
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Welcome to CI CD build";
+	}
+	
+	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootCicdBuildAwsApplication.class, args);
 	}
